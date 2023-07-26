@@ -35,7 +35,7 @@ function App() {
 
   
   useEffect(() => {
-    fetch('https://api.unsplash.com/photos/random?client_id=Rrom0219')
+    fetch('https://api.unsplash.com/photos/random?client_id=AcK4oG8tmFQSxyOQYXBfdydRqkU8zJ-XY2ZFjjzdcOo')
       .then(response => response.json())
       .then(data => setImage(data.urls.regular))
       .catch(error => console.log(error));
@@ -61,6 +61,7 @@ function App() {
 
       <div className='imagen-contenedor'>
          <img src={image} alt="Unsplash Image" />
+        
       </div>
 
 
